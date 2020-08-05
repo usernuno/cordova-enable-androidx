@@ -1,0 +1,25 @@
+{
+  "name": "cordova-enable-androidx",
+  "version": "0.0.1",
+  "description": "",
+  "cordova": {
+    "id": "cordova-enable-androidx",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/usernuno/cordova-enable-androidx.git"
+  },
+  "keywords": [
+    "cordova",
+    "androidx"
+  ],
+  "author": "Nuno Azevedo",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/usernuno/cordova-enable-androidx/issues"
+  },
+  "homepage": "https://github.com/usernuno/cordova-enable-androidx"
+}

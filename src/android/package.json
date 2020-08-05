@@ -1,0 +1,14 @@
+{
+    "name": "cordova-enable-androidx-hooks",
+    "version": "0.0.1",
+    "description": "",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "xml2js": "^0.4.19"
+    }
+}
