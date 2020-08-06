@@ -13,6 +13,7 @@
 
   <platform name="android">
     <hook type="after_plugin_install" src="src/android/handle_androidx.js"/>
+    <framework src="src/android/cordova-androidx-build.gradle" custom="true" type="gradleReference"/>
   </platform>
 
 </plugin>
