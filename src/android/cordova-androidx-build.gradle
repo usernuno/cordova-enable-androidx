@@ -2191,19 +2191,20 @@ android {
     def useAndroidX = hasUseAndroidX &&
             'true' == project.ext.get('android.useAndroidX')
 
-    //---------------------------
-    // Replace all source code
-    //---------------------------
-    def cvtList = getConvertListe(useAndroidX)
+    if (useAndroidX) {
+      //---------------------------
+      // Replace all source code
+      //---------------------------
+      def cvtList = getConvertListe(useAndroidX)
 
-    replaceFiles("**/AndroidManifest.xml", cvtList, useAndroidX)
-    replaceFiles("**/res/*.xml", cvtList, useAndroidX)
-    replaceFiles("**/*.java", cvtList, useAndroidX)
+      replaceFiles("**/AndroidManifest.xml", cvtList, useAndroidX)
+      replaceFiles("**/res/*.xml", cvtList, useAndroidX)
+      replaceFiles("**/*.java", cvtList, useAndroidX)
 
-    //---------------------------
-    // Replace all gradle files
-    //---------------------------
-    replaceGradleFiles(useAndroidX)
+      //---------------------------
+      // Replace all gradle files
+      //---------------------------
+      replaceGradleFiles(useAndroidX)
+    }
   }
-
 }
